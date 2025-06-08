@@ -1,6 +1,6 @@
-# 🔐 CryptoAlgorithmsApp
+# 🔐 Crypto Basic Cipher App
 
-**CryptoAlgorithmsApp** is a simple Android application developed in Kotlin that allows users to encrypt and decrypt messages using classical cryptographic algorithms. The app supports multiple ciphers and offers an intuitive user interface to test and visualize the behavior of each algorithm.
+**Crypto Basic Cipher App** is a simple Android application developed in Kotlin that allows users to encrypt and decrypt messages using classical cryptographic algorithms. The app supports multiple ciphers and offers an intuitive user interface to test and visualize the behavior of each algorithm.
 
 ---
 
