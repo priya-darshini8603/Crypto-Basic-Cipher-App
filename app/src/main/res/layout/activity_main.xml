@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#3F51B5"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Cipher Tool"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/header"
+        android:layout_marginTop="12dp"
+        android:hint="Enter text"
+        android:paddingHorizontal="20dp"
+        android:textSize="18sp"
+        android:textColor="#212121"
+        android:textColorHint="#9E9E9E" />
+
+    <EditText
+        android:id="@+id/keyText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/inputText"
+        android:layout_marginTop="12dp"
+        android:hint="Enter key or keyword"
+        android:paddingHorizontal="20dp"
+        android:textSize="18sp"
+        android:textColor="#212121"
+        android:textColorHint="#9E9E9E" />
+
+    <Spinner
+        android:id="@+id/cipherSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/keyText"
+        android:layout_marginTop="12dp"
+        android:paddingHorizontal="20dp" />
+
+    <Button
+        android:id="@+id/encryptBtn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/cipherSpinner"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Encrypt"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="2dp" />
+
+    <Button
+        android:id="@+id/decryptBtn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/encryptBtn"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FF9800"
+        android:text="Decrypt"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="2dp" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/decryptBtn"
+        android:layout_marginTop="24dp"
+        android:text="Result will appear here"
+        android:textSize="17sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#3E3E3E"
+        android:background="#E0E0E0"
+        android:padding="12dp"
+        android:minHeight="100dp"
+        android:gravity="top" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/copyBtn"
+        android:layout_width="145dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/resultText"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentEnd="true"
+        android:text="Copy Result"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        app:cornerRadius="28dp"
+        app:backgroundTint="#2196F3"
+        app:iconPadding="8dp"
+        app:rippleColor="#BBDEFB"
+        android:elevation="6dp" />
+
+</RelativeLayout>
